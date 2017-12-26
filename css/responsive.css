@@ -18,7 +18,7 @@ body {
 header {
   color      : #0091EA;
   background : #fff;
-  text-align  : center;
+  text-align : center;
 }
 
 h1 {
@@ -140,6 +140,8 @@ input {
   position         : fixed;
   right            : 6px;
   bottom           : 6px;
+  width            : 30px;
+  height           : 30px;
   border           : none;
   background-color : #fff;
   outline          : none;
