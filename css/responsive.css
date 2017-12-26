@@ -1,0 +1,269 @@
+/* GLOBAL STYLES */
+
+body {
+  margin      : 0;
+  padding     : 0;
+  background  : #0091EA;
+  font-family : helvetica,
+                serif;
+}
+
+.home {
+  position : center;
+  width    : 100%;
+  height   : auto;
+}
+
+header {
+  color      : #0091EA;
+  background : #fff;
+  text-align : center;
+}
+
+h1 {
+  margin    : 0;
+  padding   : 1em;
+  font-size : 2.5em;
+}
+
+h2 {
+  font-size : 1.5em;
+}
+
+main {
+  max-width     : 1200px;
+  margin        : 25px auto;
+  margin-bottom : 70px;
+  padding       : 0px;
+  overflow      : auto;
+  background    : #fff;
+  text-align    : center;
+}
+
+nav {
+  z-index          : 1;
+  position         : fixed;
+  bottom           : 0;
+  width            : 100%;
+  overflow         : hidden;
+  background-color : #fff;
+  text-align       : center;
+}
+
+nav a {
+  display         : inline-block;
+  width           : auto;
+  padding         : 14px 16px;
+  color           : #0091EA;
+  text-align      : center;
+  text-decoration : none;
+  font-size       : 17px;
+}
+
+nav a:hover {
+  background : #f1f1f1;
+}
+
+nav a.active {
+  color            : white;
+  background-color : #0091EA;
+}
+
+.menu {
+  width      : 100%;
+  margin     : 0;
+  padding    : 0;
+  background : #0091EA;
+  text-align : center;
+}
+
+.menu li {
+  padding : 15px;
+}
+
+.menu li a {
+  padding         : 8px 10px;
+  color           : #fff;
+  border          : 2px solid transparent;
+  border-radius   : 4px;
+  text-decoration : none;
+  font-weight     : 600;
+}
+
+.menu li a:hover {
+  border : 2px solid #fff;
+}
+
+.tablinksactive {
+  padding         : 8px 10px;
+  color           : #fff;
+  border          : 2px solid #fff;
+  border          : ;
+  border-radius   : 4px;
+  text-decoration : none;
+  font-weight     : 600;
+}
+
+.tabcontent {
+  display    : none;
+  padding    : 6px 12px;
+  border-top : none;
+}
+
+label {
+  width       : auto;
+  float       : left;
+  padding-top : 5px;
+  font-size   : 1.5em;
+}
+
+input {
+  width         : auto;
+  height        : 20px;
+  float         : right;
+  margin-top    : 5px;
+  margin-bottom : 5px;
+  padding       : 5px;
+  border        : 1px solid grey;
+  border-radius : 5px;
+  font-size     : 1.2em;
+}
+
+#submitButton {
+  width  : 210px;
+  height : 50px;
+}
+
+#submitButton:hover {
+  box-shadow : 0 12px 16px 0 rgba(0,0,0,0.24),
+               0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#myBtn {
+  z-index          : 99;
+  display          : none;
+  position         : fixed;
+  right            : 6px;
+  bottom           : 6px;
+  border           : none;
+  background-color : #fff;
+  outline          : none;
+  cursor           : pointer;
+}
+
+#myBtn:hover {
+  background-color : #fff;
+}
+
+#map {
+  width  : 100%;
+  height : 400px;
+}
+
+.extra {
+  padding    : 0 20px;
+  text-align : justify;
+}
+
+.container {
+  position : relative;
+  width    : 100%;
+}
+
+.image {
+  display : block;
+  width   : 100%;
+  height  : auto;
+}
+
+.overlay {
+  position         : absolute;
+  right            : 0;
+  bottom           : 0;
+  left             : 0;
+  width            : 100%;
+  height           : 0;
+  overflow         : hidden;
+  background-color : #0091EA;
+  transition       : .5s ease;
+}
+
+.container:hover .overlay {
+  height : 100%;
+}
+
+.flex-grid {
+  display         : flex;
+  margin          : 0 0 20px 0;
+  flex-direction  : column;
+  justify-content : space-between;
+}
+
+.flex-grid .col {
+  padding : 10px;
+  flex    : 1;
+}
+
+.text {
+  position      : absolute;
+  top           : 50%;
+  left          : 50%;
+  color         : white;
+  overflow      : hidden;
+  font-size     : 20px;
+  -ms-transform : translate(-50%, -50%);
+  transform     : translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIRST BREAKPOINT (TABLET SIZE) */
+
+@media
+  screen
+  and (min-width : 640px) {
+  main {
+    max-width : 640px;
+  }
+
+  .menu li {
+    display : inline-block;
+  }
+
+  #slider {
+    width      : 500px;
+    overflow   : hidden;
+    background : #0091EA;
+  }
+
+  .flex-grid {
+    flex-direction : row;
+  }
+}
+
+/* END FIRST BREAKPOINT */
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+
+@media
+  screen
+  and (min-width : 1000px) {
+  main {
+    max-width : 1000px;
+  }
+
+  .menu li {
+    margin : 0 30px;
+  }
+
+  #slider {
+    width      : 1000px;
+    overflow   : hidden;
+    background : #0091EA;
+  }
+}
+
+/* END SECOND BREAKPOINT */
