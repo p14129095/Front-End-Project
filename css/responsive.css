@@ -94,16 +94,6 @@ nav a.active {
   border : 2px solid #fff;
 }
 
-.tablinksactive {
-  padding         : 8px 10px;
-  color           : #fff;
-  border          : 2px solid #fff;
-  border          : ;
-  border-radius   : 4px;
-  text-decoration : none;
-  font-weight     : 600;
-}
-
 .tabcontent {
   display    : none;
   padding    : 6px 12px;
