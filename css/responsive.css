@@ -217,6 +217,10 @@ input {
     max-width : 640px;
   }
 
+  header {
+    height: 170px;
+  }
+
   .logo {
     height: 100%;
     width: auto;
