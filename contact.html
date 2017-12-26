@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>A Restaurant</title>
   <link rel="stylesheet" href="css/responsive.css">
-  <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/top.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/top.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -26,17 +26,17 @@
       <div class="col">
         <div class="form">
           <form id="formID" action="#" method="post">
-            <p><label for="fname">First Name:</label></p>
+            <p><label>First Name:</label></p>
             <p><input name="fname" type="text" placeholder="First Name" required value="" /><br /><br /></p>
 
-            <p><label for="lname">Last Name:</label></p>
+            <p><label>Last Name:</label></p>
             <p><input name="lname" type="text" placeholder="Last Name" required value="" /><br /><br /></p>
 
-            <p><label for="email">Email:</label></p>
+            <p><label>Email:</label></p>
             <p><input name="email" type="email" placeholder="Email" required value="" /><br /><br /></p>
 
-            <p><label for="comments">Comments:</label></p>
-            <p><input name="comments" type="textarea" placeholder="Enter text here..." required value="" /><br /><br /></p>
+            <p><label>Comments:</label></p>
+            <p><input name="comments" type="text" placeholder="Enter text here..." required value="" /><br /><br /></p>
 
             <p><input id="submitButton" type="submit" value="Send" /></p>
           </form>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png" alt="Top Arrow"></button>
   </main>
 </body>
 </html>

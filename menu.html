@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>A Restaurant</title>
   <link rel="stylesheet" href="css/responsive.css">
-  <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/top.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/top.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -25,7 +25,7 @@
     <div class="tab">
       <ul class ="menu">
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Starter')">Starter</a></li>
-        <li><a href="#" class="tablinks" onclick="openTab(event, 'Main Course')">Main Course</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Main')">Main Course</a></li>
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Sides')">Sides</a></li>
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Desserts')">Desserts</a></li>
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Drinks')">Drinks</a></li>
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <div id="Main Course" class="tabcontent">
+    <div id="Main" class="tabcontent">
       <h3>Main Course</h3>
       <div class="flex-grid">
         <div class="col">
@@ -182,7 +182,7 @@
       </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png" alt="Top Arrow"></button>
   </main>
 </body>
 </html>
