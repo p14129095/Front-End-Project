@@ -4,6 +4,7 @@ body {
   margin      : 0;
   padding     : 0;
   background  : #0091EA;
+  text-align  : center;
   font-family : helvetica,
                 serif;
 }
@@ -17,7 +18,7 @@ body {
 header {
   color      : #0091EA;
   background : #fff;
-  text-align : center;
+  text-align  : center;
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
 }
 
 .logo {
-  width: 80%;
+  width : 80%;
 }
 
 h2 {
@@ -199,13 +200,13 @@ input {
 }
 
 .text {
-  position      : absolute;
-  top           : 50%;
-  left          : 50%;
-  color         : white;
-  overflow      : hidden;
-  font-size     : 20px;
-  transform     : translate(-50%, -50%);
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  color     : white;
+  overflow  : hidden;
+  font-size : 20px;
+  transform : translate(-50%, -50%);
 }
 
 /* FIRST BREAKPOINT (TABLET SIZE) */
@@ -218,12 +219,12 @@ input {
   }
 
   header {
-    height: 170px;
+    height : 170px;
   }
 
   .logo {
-    height: 170px;
-    width: auto;
+    width  : auto;
+    height : 170px;
   }
 
   .menu li {
