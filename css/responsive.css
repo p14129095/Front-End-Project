@@ -1,250 +1,287 @@
 /* GLOBAL STYLES */
 
 body {
-  margin      : 0;
-  padding     : 0;
-  background  : #0091EA;
-  text-align  : center;
-  font-family : helvetica,
-                serif;
+  margin: 0;
+  padding: 0;
+  background: #0091EA;
+  text-align: center;
+  font-family: helvetica, serif;
 }
 
 .home {
-  position : center;
-  width    : 100%;
-  height   : auto;
+  position: center;
+  width: 100%;
+  height: auto;
 }
 
 header {
-  color      : #0091EA;
-  background : #fff;
-  text-align : center;
+  color: #0091EA;
+  background: #fff;
+  text-align: center;
 }
 
 h1 {
-  margin    : 0;
-  padding   : 1em;
-  font-size : 2.5em;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 2.5em;
 }
 
 .logo {
-  width : 80%;
+  width: 80%;
 }
 
 main {
-  max-width     : 1200px;
-  margin        : 25px auto;
-  margin-bottom : 70px;
-  padding       : 0px;
-  overflow      : auto;
-  background    : #fff;
-  text-align    : center;
+  max-width: 1200px;
+  margin: 25px auto;
+  margin-bottom: 70px;
+  padding: 0px;
+  overflow: auto;
+  background: #fff;
+  text-align: center;
 }
 
 nav {
-  z-index          : 1;
-  position         : fixed;
-  bottom           : 0;
-  width            : 100%;
-  overflow         : hidden;
-  background-color : #fff;
-  text-align       : center;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
 }
 
 nav a {
-  display         : inline-block;
-  width           : auto;
-  padding         : 14px 16px;
-  color           : #0091EA;
-  text-align      : center;
-  text-decoration : none;
-  font-size       : 17px;
+  display: inline-block;
+  width: auto;
+  padding: 14px 16px;
+  color: #0091EA;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 nav a:hover {
-  background : #f1f1f1;
+  background: #f1f1f1;
 }
 
 nav a.active {
-  color            : white;
-  background-color : #0091EA;
+  color: white;
+  background-color: #0091EA;
 }
 
 .menu {
-  width      : 100%;
-  margin     : 0;
-  padding    : 0;
-  background : #0091EA;
-  text-align : center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0091EA;
+  text-align: center;
 }
 
 .menu li {
-  padding : 15px;
+  padding: 15px;
 }
 
 .menu li a {
-  padding         : 8px 10px;
-  color           : #fff;
-  border          : 2px solid transparent;
-  border-radius   : 4px;
-  text-decoration : none;
-  font-weight     : 600;
+  padding: 8px 10px;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .menu li a:hover {
-  border : 2px solid #fff;
+  border: 2px solid #fff;
 }
 
 .tabcontent {
-  display    : none;
-  padding    : 6px 12px;
-  border-top : none;
-}
-
-label {
-  width       : auto;
-  float       : left;
-  padding-top : 5px;
-  font-size   : 1.5em;
-}
-
-input {
-  width         : auto;
-  height        : 20px;
-  float         : right;
-  margin-top    : 5px;
-  margin-bottom : 5px;
-  padding       : 5px;
-  border        : 1px solid grey;
-  border-radius : 5px;
-  font-size     : 1.2em;
-}
-
-#submitButton {
-  width  : 210px;
-  height : 50px;
-}
-
-#submitButton:hover {
-  box-shadow : 0 12px 16px 0 rgba(0,0,0,0.24),
-               0 17px 50px 0 rgba(0,0,0,0.19);
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 #myBtn {
-  z-index          : 99;
-  display          : none;
-  position         : fixed;
-  right            : 6px;
-  bottom           : 6px;
-  width            : 30px;
-  height           : 30px;
-  border           : none;
-  background-color : #fff;
-  outline          : none;
-  cursor           : pointer;
+  z-index: 99;
+  display: none;
+  position: fixed;
+  right: 6px;
+  bottom: 6px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
 }
 
 #myBtn:hover {
-  background-color : #fff;
+  background-color: #fff;
 }
 
 #map {
-  width  : 100%;
-  height : 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .extra {
-  padding    : 0 20px;
-  text-align : justify;
+  padding: 0 20px;
+  text-align: justify;
 }
 
 .container {
-  position : relative;
-  width    : 100%;
+  position: relative;
+  width: 100%;
 }
 
 .image {
-  display : block;
-  width   : 100%;
-  height  : auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .overlay {
-  position         : absolute;
-  right            : 0;
-  bottom           : 0;
-  left             : 0;
-  width            : 100%;
-  height           : 0;
-  overflow         : hidden;
-  background-color : #0091EA;
-  transition       : .5s ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #0091EA;
+  transition: .5s ease;
 }
 
 .container:hover .overlay {
-  height : 100%;
+  height: 100%;
 }
 
 .text {
-  position  : absolute;
-  top       : 50%;
-  left      : 50%;
-  color     : white;
-  overflow  : hidden;
-  font-size : 20px;
-  transform : translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  overflow: hidden;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
 }
 
 .flex-container {
-  display         : -moz-box;
-  display         : flex;
-  display         : -webkit-box;
-  display         : -ms-flexbox;
-  display         : -moz-flex;
-  display         : -webkit-flex;
-  -ms-box-orient  : horizontal;
-  margin          : 0;
-  padding         : 0;
-  justify-content : space-between;
-  list-style      : none;
+  display: flex;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -moz-box;
+  -ms-box-orient: horizontal;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .wrap {
-  -webkit-flex-wrap : wrap;
-  flex-wrap         : wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flex-item {
-  width      : 100%;
-  margin     : 10px;
-  padding    : 5px;
-  text-align : center;
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-items {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-item-form {
+  padding: 10px;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=email], input[type=text], select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  resize: vertical;
+}
+
+label {
+  display: inline-block;
+  width: auto;
+  float: left;
+  padding: 6px 6px 6px 0;
+  font-size: 1.5em;
+}
+
+input[type=reset], input[type=submit] {
+  float: right;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #0091EA;
+  cursor: pointer;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+#resetButton, #submitButton {
+  width: 110px;
+  height: 50px;
+}
+
+#resetButton:hover, #submitButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* FIRST BREAKPOINT (TABLET SIZE) */
 
-@media
-  screen
-  and (min-width : 640px) {
+@media screen and (min-width: 640px) {
   main {
-    max-width : 640px;
+    max-width: 640px;
   }
-
   header {
-    height : 170px;
+    height: 170px;
   }
-
   .logo {
-    width  : auto;
-    height : 170px;
+    width: auto;
+    height: 170px;
   }
-
   .menu li {
-    display : inline-block;
+    display: inline-block;
   }
-
   .flex-item {
-    width : 44%;
+    width: 44%;
   }
 }
 
@@ -252,19 +289,18 @@ input {
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 
-@media
-  screen
-  and (min-width : 1000px) {
+@media screen and (min-width: 1000px) {
   main {
-    max-width : 1000px;
+    max-width: 1000px;
   }
-
   .menu li {
-    margin : 0 30px;
+    margin: 0 30px;
   }
-
   .flex-item {
-    width : 30%;
+    width: 30%;
+  }
+  .flex-items {
+    width: 30%;
   }
 }
 

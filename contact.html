@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>A Restaurant</title>
@@ -22,7 +23,7 @@
   </nav>
 
   <main>
-    <div class="flex-grid">
+    <!-- <div class="flex-grid">
       <div class="col">
         <div class="form">
           <form id="formID" action="#" method="post">
@@ -47,9 +48,78 @@
         <script src="js/google.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzN1deOJR4IdphYOuIetzDgBUX13Aiw1c&callback=initMap"></script>
       </div>
-    </div>
+    </div> -->
+
+    <ul class="flex-container wrap">
+      <li class="flex-item">
+        <h1>Feedback</h1>
+        <form id="formID" action="#" method="post">
+          <div class="row">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Joe" required value="">
+          </div>
+          <div class="row">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Bloggs" required value="">
+          </div>
+          <div class="row">
+            <label for="lname">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required value="" />
+          </div>
+          <div class="row">
+            <label for="subject">Comments:</label>
+            <textarea id="subject" name="subject" placeholder="Write something here..." required value=""></textarea>
+          </div>
+          <ul class="flex-container wrap">
+            <li class="flex-item-form">
+              <input id="resetButton" type="reset" value="Clear">
+            </li>
+            <li class="flex-item-form">
+              <input id="submitButton" type="submit" value="Send">
+            </li>
+          </ul>
+        </form>
+      </li>
+
+      <li class="flex-item">
+        <h1>Contact</h1>
+        <form id="formID" action="#" method="post">
+          <div class="row">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Joe" required value="">
+          </div>
+          <div class="row">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Bloggs" required value="">
+          </div>
+          <div class="row">
+            <label for="lname">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required value="" />
+          </div>
+          <div class="row">
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" placeholder="Write something here..." required value=""></textarea>
+          </div>
+          <ul class="flex-container wrap">
+            <li class="flex-item-form">
+              <input id="resetButton" type="reset" value="Clear">
+            </li>
+            <li class="flex-item-form">
+              <input id="submitButton" type="submit" value="Send">
+            </li>
+          </ul>
+        </form>
+      </li>
+
+      <li class="flex-items">
+        <div id="map"></div>
+        <script src="js/google.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzN1deOJR4IdphYOuIetzDgBUX13Aiw1c&callback=initMap"></script>
+      </li>
+    </ul>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up.png" alt="Top Arrow"></button>
   </main>
 </body>
+
 </html>
