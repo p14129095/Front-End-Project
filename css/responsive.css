@@ -31,10 +31,6 @@ h1 {
   width : 80%;
 }
 
-h2 {
-  font-size : 1.5em;
-}
-
 main {
   max-width     : 1200px;
   margin        : 25px auto;
@@ -189,18 +185,6 @@ input {
   height : 100%;
 }
 
-.flex-grid {
-  display         : flex;
-  margin          : 0 0 20px 0;
-  flex-direction  : column;
-  justify-content : space-between;
-}
-
-.flex-grid .col {
-  padding : 10px;
-  flex    : 1;
-}
-
 .text {
   position  : absolute;
   top       : 50%;
@@ -209,6 +193,32 @@ input {
   overflow  : hidden;
   font-size : 20px;
   transform : translate(-50%, -50%);
+}
+
+.flex-container {
+  display         : -moz-box;
+  display         : flex;
+  display         : -webkit-box;
+  display         : -ms-flexbox;
+  display         : -moz-flex;
+  display         : -webkit-flex;
+  -ms-box-orient  : horizontal;
+  margin          : 0;
+  padding         : 0;
+  justify-content : space-between;
+  list-style      : none;
+}
+
+.wrap {
+  -webkit-flex-wrap : wrap;
+  flex-wrap         : wrap;
+}
+
+.flex-item {
+  width      : 100%;
+  margin     : 10px;
+  padding    : 5px;
+  text-align : center;
 }
 
 /* FIRST BREAKPOINT (TABLET SIZE) */
@@ -233,14 +243,8 @@ input {
     display : inline-block;
   }
 
-  #slider {
-    width      : 500px;
-    overflow   : hidden;
-    background : #0091EA;
-  }
-
-  .flex-grid {
-    flex-direction : row;
+  .flex-item {
+    width : 44%;
   }
 }
 
@@ -259,10 +263,8 @@ input {
     margin : 0 30px;
   }
 
-  #slider {
-    width      : 1000px;
-    overflow   : hidden;
-    background : #0091EA;
+  .flex-item {
+    width : 30%;
   }
 }
 
