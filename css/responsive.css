@@ -23,7 +23,6 @@ header {
 h1 {
   margin: 0;
   padding: 1em;
-  text-align: center;
   font-size: 2.5em;
 }
 
@@ -167,12 +166,12 @@ nav a.active {
 }
 
 .flex-container {
+  display: -moz-box;
   display: flex;
-  display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -moz-flex;
-  display: -moz-box;
+  display: -webkit-flex;
   -ms-box-orient: horizontal;
   margin: 0;
   padding: 0;
@@ -185,14 +184,7 @@ nav a.active {
   flex-wrap: wrap;
 }
 
-.flex-item {
-  width: 100%;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-}
-
-.flex-items {
+.flex-item, .flex-items {
   width: 100%;
   margin: 10px;
   padding: 5px;
@@ -200,7 +192,10 @@ nav a.active {
 }
 
 .flex-item-form {
+  width: 100%;
+  margin: 10px;
   padding: 10px;
+  text-align: left;
   justify-content: space-between;
 }
 
@@ -240,10 +235,6 @@ input[type=reset], input[type=submit] {
 }
 
 input[type=reset]:hover, input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-input[type=reset]:hover {
   background-color: #45a049;
 }
 
