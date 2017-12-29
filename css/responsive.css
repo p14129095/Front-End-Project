@@ -1,17 +1,15 @@
 /* GLOBAL STYLES */
 
+body, html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #0091EA;
   text-align: center;
   font-family: helvetica, serif;
-}
-
-.home {
-  position: center;
-  width: 100%;
-  height: auto;
 }
 
 header {
@@ -104,18 +102,13 @@ nav a.active {
   z-index: 99;
   display: none;
   position: fixed;
-  right: 6px;
-  bottom: 6px;
+  right: 12px;
+  bottom: 12px;
   width: 30px;
   height: 30px;
   border: none;
-  background-color: #fff;
   outline: none;
   cursor: pointer;
-}
-
-#myBtn:hover {
-  background-color: #fff;
 }
 
 #map {
@@ -192,7 +185,7 @@ nav a.active {
 }
 
 .flex-item-form {
-  width: 100%;
+  width: 40%;
   margin: 10px;
   padding: 10px;
   text-align: left;
@@ -203,17 +196,22 @@ nav a.active {
   box-sizing: border-box;
 }
 
-input[type=email], input[type=text], select, textarea {
+input[type=email], input[type=text], textarea {
   box-sizing: border-box;
   width: 100%;
   height: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 20px;
+  padding: 20px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1.2em;
   resize: vertical;
+}
+
+textarea {
+  height: 60px;
+  padding: 10px;
 }
 
 label {
@@ -255,6 +253,51 @@ input[type=reset]:hover, input[type=submit]:hover {
   clear: both;
 }
 
+.home {
+  position: relative;
+  width: 100%;
+}
+
+.home image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.home:hover .image {
+  opacity: 0.3;
+}
+
+.home:hover .middle {
+  opacity: 1;
+}
+
+.middle a {
+  padding: 8px 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.middle a:hover {
+  border: 2px solid transparent;
+}
+
 /* FIRST BREAKPOINT (TABLET SIZE) */
 
 @media screen and (min-width: 640px) {
@@ -292,6 +335,9 @@ input[type=reset]:hover, input[type=submit]:hover {
   }
   .flex-items {
     width: 30%;
+  }
+  #map {
+    height: 100%;
   }
 }
 
